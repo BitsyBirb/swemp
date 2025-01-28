@@ -27,8 +27,28 @@
         This state/prop in question is just an apple counter. Why? Bad Apple.
 
 
-    Format:
+    Format: Same across all loads as it simply lets you navigate to other pages
+    Text: Just some basic text and a line telling you to input "help" for more commands (or h)
+    100% of the screen's width
+        10% margins on each side as safety
 
+    Adjusted: Just use a portion of the screen instead until I can figure out the machine scaling
 
+    
 
 */
+
+// Relative pathing. Find out how to make absolute potentially to avoid this because I don't think this is good?
+import '../styles/terminal.css'
+
+export default function MainTerminal(){
+    return(
+        <div className="Main-Terminal">
+            <div >
+                <text className="Terminal-Text">
+                    Welcome to SwempShell! For more commands and their usage, please type 'help' and hit enter on the cursor.
+                </text>
+            </div>    
+        </div>
+    ); // I guess semicolons are required.
+}
